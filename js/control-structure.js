@@ -13,7 +13,130 @@
 // Break
 
 
-// If 
+//if
+
+// let a = 11
+// if (a === 10) {
+//     console.log("true");
+// }else{
+//     console.log("false");
+// }
+
+// else if
+
+// let a = 12;
+// if (a === 10) {
+//     console.log(`a = ${a}`);
+// } else if(a=== 11) {
+//     console.log(`a = ${a}`);
+// }else{
+//     console.log(`a = ${a}`);
+// }
+
+//switch
+// let a = 70;
+// let b = 20;
+
+// switch (a + b) {
+//     case 30:
+//         console.log(`a + b = ${a + b}`);
+//         break;
+//     case 40:
+//         console.log(`a + b = ${a + b}`);
+//         break;
+//     default:
+//         console.log(`a + b = ${a + b}`);
+// }
+
+
+// loops 
+
+// let array = [10,20,30,40];
+
+// for (let index = 0; index < array.length; index++) {
+//     if(array[index] === 30) continue;
+//     if(array[index] === 30) break;
+
+//     console.log(array[index],index);   
+// }
+
+// for in
+// for (const key in array) {
+//   console.log(array[key]);
+// }
+
+// For of
+// for (const iterator of array) {
+//     console.log(iterator);
+// }
+
+
+// While 
+
+// let a= 100;
+
+// while (a > 0) {
+//     console.log(a);
+//     a--;
+// }
+
+// Do while loop
+
+// let a = 11;
+// do {
+//     console.log(a);
+//     a--;
+// } while (a> 10);
+
+
+// number 1234567894561334565778
+
+// let number = 1234567894561334565778;
+// let temp = number;
+// while(temp > 0) {
+//     let reminder = temp%10;
+//     console.log(reminder);
+//     temp = parseInt(temp/10)
+// }
+
+// 153 = 1*1*1 + 5* 5* 5+ 3 * 3 *3
+// armstrong number
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// If
 // var a = "fsadf";
 
 // if (a == 10 && typeof a == "number") {
@@ -21,7 +144,7 @@
 // }else if (typeof a == "string") {
 //     console.log("strig");
 // } else {
-//     console.log("not checked");   
+//     console.log("not checked");
 // }
 
 //nested if else
@@ -127,14 +250,14 @@
 //     console.log(`${number} is not armstrong`);
 // }
 
-// write a program  number is armstrong no or not 
+// write a program  number is armstrong no or not
 
 // 153 = 1*1*1 + 5*5*5 + 3*3*3
 
 
 // 12 = 2 × 2 × 3.
 // 30 = 2 × 3 × 5.
-// LCM = 2 * 3 * 2 * 5 = 60 
+// LCM = 2 * 3 * 2 * 5 = 60
 
 // HCF = 2 * 3 = 6
 
