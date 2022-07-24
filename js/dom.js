@@ -36,7 +36,7 @@
 // confirm('fsafsadfsafd');
 
 // prompt('fsadfdsafdasf');
-alert('fsafsadf');
+// alert('fsafsadf');
 
 // location
-location.href = 'https://www.w3schools.com/'
+// location.href = 'https://www.w3schools.com/'

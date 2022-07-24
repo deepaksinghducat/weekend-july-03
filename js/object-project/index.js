@@ -7,8 +7,8 @@
 </div>
 </div> */}
 
-class ProductList  {
-    products = [      
+class ProductList {
+    products = [
         {
             image: "image1.jpg",
             name: "fasfsdaf",
@@ -35,36 +35,65 @@ class ProductList  {
         const root = document.getElementById('root');
 
         for (const product of this.products) {
-            const card = document.createElement('div');
-            card.className = 'card';
-            card.style.width = "18rem"
 
-            const img = document.createElement('img');
-            img.src = product.image
-            img.className = 'card-img-top';
+            let prodEl = new Product(product);
 
-            const cardbody = document.createElement('div');
-            cardbody.className = 'card-body';
-
-            const h5 = document.createElement('h5');
-            h5.className = 'card-title';
-            h5.innerHTML = product.name
-
-            const p = document.createElement('p');
-            p.className = 'card-text';
-            p.innerHTML = product.desc;
-            
-            cardbody.append(h5);
-            cardbody.append(p);
-
-            card.appendChild(img);
-            card.append(cardbody);
+            const card = prodEl.render();
 
             root.append(card)
         }
     }
 }
 
+class Product {
+    constructor(product) {
+        this.product = product;
+    }
+
+    clickMe =  () => {
+        console.log('click Me');
+        console.log(this.product);
+    }
+
+    render() {
+        const card = document.createElement('div');
+        card.className = 'card';
+        card.style.width = "18rem"
+
+        const img = document.createElement('img');
+        img.src = this.product.image
+        img.className = 'card-img-top';
+
+        const cardbody = document.createElement('div');
+        cardbody.className = 'card-body';
+
+        const h5 = document.createElement('h5');
+        h5.className = 'card-title';
+        h5.innerHTML = this.product.name
+
+        const p = document.createElement('p');
+        p.className = 'card-text';
+        p.innerHTML = this.product.desc;
+
+        const button = document.createElement('button');
+        button.id = `button-${this.product.name}`
+        button.className = "btn btn-primary"
+        button.innerHTML = "Click Me!"
+
+        cardbody.append(h5);
+        cardbody.append(p);
+        cardbody.append(button);
+        
+        card.appendChild(img);
+        card.append(cardbody);
+
+        addEventListener("click", this.clickMe)
+
+        // root.append(card)
+
+        return card
+    }
+}
 
 let productList = new ProductList();
 productList.render();
