@@ -48,9 +48,6 @@ class Example {
 
 
 
-
-
-
 // String Template letrals
 
 // const string  = `
