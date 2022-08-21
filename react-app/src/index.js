@@ -4,12 +4,17 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import Root from './components/Root';
+import Portals from './components/Portals';
+import ClassComponent from './components/ClassComponent';
+import UseEffect from './components/UseEffect';
+import UseRef from './components/UseRef';
+import UseReducers from './components/UseReducers';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <Root>
-      <App />
+      <UseReducers />
     </Root>
   </React.StrictMode>
 );

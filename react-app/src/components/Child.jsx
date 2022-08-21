@@ -1,12 +1,12 @@
-import React from 'react'
+import React, { Fragment } from 'react'
 
 function Child(props) {
-	console.log(props);
+	// console.log(props);
 
-	props.parentFun('fsadfasf');
+	// props.parentFun('fsadfasf');
 
   return (
-	<div>{props.name}</div>
+	<Fragment>Child</Fragment>
   )
 }
 
