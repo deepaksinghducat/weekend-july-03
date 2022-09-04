@@ -1,12 +1,13 @@
 import Input from "./components/Input";
-import TodoList from "./components/TodoList";
+import InputClass from "./components/InputClass";
+import TodoListClass from "./components/TodoListClass";
 
 function App() {
 
   return (
     <div className="container">
-      <Input />
-      <TodoList />
+      <InputClass />
+      <TodoListClass />
     </div>
   );
 }
